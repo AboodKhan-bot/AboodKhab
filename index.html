@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="ddcss.css">
+
+</head>
+
+    <div class="container">
+        <h1>السلام عليكم ورحمة الله وبركاته،</h1>
+        <p>أستاذي الكريم <strong>جميل النهاري</strong>،</p>
+        <p>أتمنى أن تكون بخير. أود أن أعبر عن امتناني لفرصة العمل تحت إشرافك في هذا التكليف. إنني متحمس جدًا للبدء في هذا المشروع، وأتطلع إلى الاستفادة من خبرتك وإرشاداتك.</p>
+        <p>إذا كانت لديك أي توجيهات أو معلومات إضافية حول التكليف، أكون ممتنًا لو شاركتها معي. أرجو أن أكون عند حسن ظنك، وأعمل بجد لتحقيق النتائج المرجوة.</p>
+        <p>شكرًا لك على دعمك ووقتك. أتطلع إلى العمل معك.</p>
+        <div class="footer">
+            <p>مع خالص التحيات،</p><br><br><br><br>
+            <p>عبدالرحمن ياسر عمر خان</p>
+            <br><br><br><br><br><br><br>
+        </div>
+    </div>
+        
+</head>
+    
+  <div class="Cointainer">
+    <div class="Calculater">
+        <input type="text" placeholder="0" id="outputscreen">
+        <button onclick="Clear()">Cl</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="display('%')">%</button>
+        <button onclick="display('/')">/</button>
+        <button onclick="display('7')">7</button>
+        <button onclick="display('8')">8</button>
+        <button onclick="display('9')">9</button>
+        <button onclick="display('*')">*</button>
+        <button onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('-')">-</button>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('+')">+</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="display('0')">0</button>
+        <button onclick="Calculate()"class = equal>=</button>
+    </div>
+    <script>
+        let outputScreen =document.getElementById("outputscreen")
+        function display(num){
+            outputScreen.value +=num
+        }
+            function Calculate(){
+            try{
+                outputScreen.value = eval (outputScreen.value)
+            }
+            catch(err)
+            {
+                alert("Invalid")
+            }
+        }
+       function Clear(){
+
+        outputAScreen.value="";
+       } 
+       function del(){
+        outputScreen.value = outputScreen.value
+        .slice(0,-1)
+       }
+
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>مرحباً بك في صفحتي</h1><br><br><br>
+    <a href="wach.html" class="button">انتقل إلى الصفحة الثانية</a>
+
+</body>
+</html>
+</body>
+</html>
